@@ -1,0 +1,7 @@
+check,n,detail
+A_vs_B_image_overlap,87,100.0% of B's labelled images also appear in A
+duplicate_labelled_images_within_A,0,identical image bytes appearing more than once
+derived_groups,105,group_id = ground-truth pH rounded to 3dp
+groups_with_replicates,84,same physical sample photographed more than once
+groups_spanning_subsets,24,same solution photographed in more than one subset/device
+split_strategy,0,GroupShuffleSplit + GroupKFold on group_id; random split NOT used
