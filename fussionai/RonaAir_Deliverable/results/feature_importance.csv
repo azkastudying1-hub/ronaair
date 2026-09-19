@@ -1,0 +1,11 @@
+feature,method,value,std
+water_temp,impurity_importance,0.33279371770566535,
+ph_sensor,impurity_importance,0.0012232415902140626,
+ec_value,impurity_importance,0.33291822332920373,
+tds_ppm,impurity_importance,0.0,
+do_est,impurity_importance,0.3330648173749169,
+water_temp,permutation_importance_valid_macroF1,0.32818786488514806,0.012800031434568343
+ph_sensor,permutation_importance_valid_macroF1,0.0,0.0
+ec_value,permutation_importance_valid_macroF1,0.2586817602816441,0.01422393004061981
+tds_ppm,permutation_importance_valid_macroF1,0.0,0.0
+do_est,permutation_importance_valid_macroF1,0.342056686654577,0.008275730608263665

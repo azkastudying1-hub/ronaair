@@ -1,0 +1,51 @@
+{
+  "model_version": "ronair-risk-ai-1.0.0",
+  "notebook_version": "1.0.0",
+  "created_at": "2026-09-18 01:24:58",
+  "final_model": "DecisionTree_d6",
+  "feature_set": "A_sensor_only",
+  "features": [
+    "water_temp",
+    "ph_sensor",
+    "ec_value",
+    "tds_ppm",
+    "do_est"
+  ],
+  "training_dataset": "D2_FISHPOND_MULTICLASS",
+  "label_type": "RULE-DERIVED (label tertanam di SEMUA parameter sebagai pita rentang per kelas)",
+  "split_strategy": {
+    "strategy": "stratified_random (LAST RESORT)",
+    "strategy_note": "Group split mustahil (tidak ada pond ID) DAN chronological split degeneratif (kelas terkonfound sempurna dengan waktu). Sesuai hierarki Section 21, random split dipakai sebagai upaya terakhir dan HASILNYA TIDAK BOLEH dianggap bukti generalisasi temporal.",
+    "chronological_degenerate": true,
+    "spearman_time_vs_severity": 0.9633,
+    "group_split_possible": false,
+    "n_total": 2152,
+    "train": 1290,
+    "validation": 431,
+    "test": 431
+  },
+  "metrics_test": {
+    "Macro_F1": 0.9928,
+    "Balanced_Accuracy": 0.9929,
+    "Accuracy": 0.993,
+    "Weighted_F1": 0.993,
+    "HighRisk_Recall": 0.9941,
+    "HighRisk_Precision": 1.0,
+    "HighRisk_F1": 0.997,
+    "HighRisk_FalseNegatives": 1.0,
+    "mean_severity_gap": 0.0023,
+    "n_darurat_to_normal": 0.0
+  },
+  "rule_engine_vs_dataset_label": {
+    "agreement_accuracy": 0.7622,
+    "macro_f1": 0.7508,
+    "n_evaluated": 2153
+  },
+  "external_validation": "EXTERNAL VALIDATION NOT AVAILABLE",
+  "production_decision_path": "RULE_ENGINE_LEVEL_1 (model ML bersifat benchmark eksperimental)",
+  "scientific_caveat": "Model ini mereproduksi aturan keputusan yang terdokumentasi pada dataset publik. Model ini tidak menetapkan prediksi risiko biologis atau kausal secara independen.",
+  "tflite_export": {
+    "performed": false,
+    "reason": "Model final adalah model tabular scikit-learn kecil yang dapat diimplementasikan langsung di Kotlin lewat risk_model_parameters.json. Konversi ke TFLite akan menambah dependensi runtime tanpa manfaat."
+  }
+}

@@ -1,0 +1,190 @@
+{
+  "model_type": "DecisionTree_d6",
+  "feature_set": "A_sensor_only",
+  "features": [
+    "water_temp",
+    "ph_sensor",
+    "ec_value",
+    "tds_ppm",
+    "do_est"
+  ],
+  "classes": [
+    "DARURAT",
+    "NORMAL",
+    "SIAGA",
+    "WASPADA"
+  ],
+  "model_version": "ronair-risk-ai-1.0.0",
+  "exportable_to_native": true,
+  "representation": "decision_tree",
+  "nodes": [
+    {
+      "id": 0,
+      "feature": "water_temp",
+      "threshold": 33.9950008392334,
+      "left": 1,
+      "right": 16,
+      "class": null
+    },
+    {
+      "id": 1,
+      "feature": "water_temp",
+      "threshold": 20.074999809265137,
+      "left": 2,
+      "right": 3,
+      "class": null
+    },
+    {
+      "id": 2,
+      "feature": null,
+      "threshold": null,
+      "left": -1,
+      "right": -1,
+      "class": "DARURAT"
+    },
+    {
+      "id": 3,
+      "feature": "do_est",
+      "threshold": 3.9950000047683716,
+      "left": 4,
+      "right": 5,
+      "class": null
+    },
+    {
+      "id": 4,
+      "feature": null,
+      "threshold": null,
+      "left": -1,
+      "right": -1,
+      "class": "SIAGA"
+    },
+    {
+      "id": 5,
+      "feature": "do_est",
+      "threshold": 9.994999885559082,
+      "left": 6,
+      "right": 11,
+      "class": null
+    },
+    {
+      "id": 6,
+      "feature": "ec_value",
+      "threshold": 50.03999900817871,
+      "left": 7,
+      "right": 8,
+      "class": null
+    },
+    {
+      "id": 7,
+      "feature": null,
+      "threshold": null,
+      "left": -1,
+      "right": -1,
+      "class": "WASPADA"
+    },
+    {
+      "id": 8,
+      "feature": "ec_value",
+      "threshold": 500.97999572753906,
+      "left": 9,
+      "right": 10,
+      "class": null
+    },
+    {
+      "id": 9,
+      "feature": null,
+      "threshold": null,
+      "left": -1,
+      "right": -1,
+      "class": "NORMAL"
+    },
+    {
+      "id": 10,
+      "feature": null,
+      "threshold": null,
+      "left": -1,
+      "right": -1,
+      "class": "WASPADA"
+    },
+    {
+      "id": 11,
+      "feature": "do_est",
+      "threshold": 10.014999866485596,
+      "left": 12,
+      "right": 15,
+      "class": null
+    },
+    {
+      "id": 12,
+      "feature": "ph_sensor",
+      "threshold": 8.825000286102295,
+      "left": 13,
+      "right": 14,
+      "class": null
+    },
+    {
+      "id": 13,
+      "feature": null,
+      "threshold": null,
+      "left": -1,
+      "right": -1,
+      "class": "WASPADA"
+    },
+    {
+      "id": 14,
+      "feature": null,
+      "threshold": null,
+      "left": -1,
+      "right": -1,
+      "class": "SIAGA"
+    },
+    {
+      "id": 15,
+      "feature": null,
+      "threshold": null,
+      "left": -1,
+      "right": -1,
+      "class": "SIAGA"
+    },
+    {
+      "id": 16,
+      "feature": "water_temp",
+      "threshold": 34.0049991607666,
+      "left": 17,
+      "right": 20,
+      "class": null
+    },
+    {
+      "id": 17,
+      "feature": "do_est",
+      "threshold": 2.4049999713897705,
+      "left": 18,
+      "right": 19,
+      "class": null
+    },
+    {
+      "id": 18,
+      "feature": null,
+      "threshold": null,
+      "left": -1,
+      "right": -1,
+      "class": "DARURAT"
+    },
+    {
+      "id": 19,
+      "feature": null,
+      "threshold": null,
+      "left": -1,
+      "right": -1,
+      "class": "SIAGA"
+    },
+    {
+      "id": 20,
+      "feature": null,
+      "threshold": null,
+      "left": -1,
+      "right": -1,
+      "class": "DARURAT"
+    }
+  ]
+}

@@ -1,0 +1,56 @@
+{
+  "model_version": "ronair-risk-ai-1.0.0",
+  "feature_set": "A_sensor_only",
+  "features": [
+    {
+      "name": "water_temp",
+      "dtype": "float",
+      "training_min": 15.0,
+      "training_max": 37.99,
+      "training_p01": 15.688,
+      "training_p99": 37.678,
+      "available_in_apk": true,
+      "note": ""
+    },
+    {
+      "name": "ph_sensor",
+      "dtype": "float",
+      "training_min": 4.51,
+      "training_max": 10.5,
+      "training_p01": 4.64,
+      "training_p99": 10.39,
+      "available_in_apk": true,
+      "note": ""
+    },
+    {
+      "name": "ec_value",
+      "dtype": "float",
+      "training_min": 1.04,
+      "training_max": 4965.58,
+      "training_p01": 2.0399999999999996,
+      "training_p99": 4778.5999999999985,
+      "available_in_apk": true,
+      "note": ""
+    },
+    {
+      "name": "tds_ppm",
+      "dtype": "float",
+      "training_min": 0.0,
+      "training_max": 3267.23,
+      "training_p01": 0.0,
+      "training_p99": 2573.3259999999996,
+      "available_in_apk": true,
+      "note": ""
+    },
+    {
+      "name": "do_est",
+      "dtype": "float",
+      "training_min": 0.53,
+      "training_max": 15.98,
+      "training_p01": 0.74,
+      "training_p99": 15.543999999999997,
+      "available_in_apk": true,
+      "note": "DEPLOYMENT MISMATCH: training memakai DO terukur, APK memakai DO estimasi"
+    }
+  ]
+}

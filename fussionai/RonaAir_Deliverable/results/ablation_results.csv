@@ -1,0 +1,6 @@
+Feature_Set,Model,n_features,CV_Macro_F1,Validation_Macro_F1,Validation_Balanced_Accuracy,Validation_HighRisk_Recall,Model_Size_KB,Inference_Time_ms_per_sample,note
+A_sensor_only,RandomForest,5.0,0.9987,1.0,1.0,1.0,599.7,0.0274,
+C_sensor_plus_visual,RandomForest,6.0,0.9987,1.0,1.0,1.0,429.5,0.031,
+E_full_temporal_fusion,MLP_32_16,19.0,0.9904,1.0,1.0,1.0,51.8,0.0038,
+B_visual_proxy_only,DecisionTree_d3,1.0,0.9977,0.9978,0.9974,0.9941,2.8,0.0021,
+D_sensor_visual_ph_photo,NOT EVALUABLE,,,,,,,,ph_visual_est / ph_difference tidak ada di dataset publik mana pun; tidak disimulasikan agar tidak mengarang data.

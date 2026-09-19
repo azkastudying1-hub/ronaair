@@ -1,0 +1,10 @@
+dataset_column,ronair_feature,available_in_apk,apk_source,status
+temp_C,water_temp,True,ESP32 temperature probe,MATCH
+pH,ph_sensor,True,ESP32 pH probe,MATCH
+ec_uScm,ec_value,True,ESP32 EC probe,MATCH
+tds_mgL,tds_ppm,True,ESP32 TDS (derived from EC),MATCH (asumsi mg/L ~ ppm)
+do_mgL,do_est,True,"DO soft-sensor (ESTIMATED, not measured)","DEPLOYMENT FEATURE MISMATCH — training memakai DO terukur, APK memakai DO estimasi"
+turbidity_NTU,visual_proxy_turbidity,False,TIDAK ADA sensor turbidity di RonaAir,UNVALIDATED PROXY untuk kanal visual (visual_score)
+orp_mV,(tidak dipakai),False,TIDAK ADA probe ORP,EXCLUDED — tidak tersedia saat deployment
+(tidak ada),ph_visual_est,True,pH photo model (PolynomialRidge2 / COMBINED_ALL),TIDAK ADA DI DATASET MANA PUN — SET D tidak dapat dievaluasi
+(tidak ada),visual_score,True,CV model (ronair_cv_classifier.tflite),TIDAK ADA DI DATASET MANA PUN — hanya tersedia proxy

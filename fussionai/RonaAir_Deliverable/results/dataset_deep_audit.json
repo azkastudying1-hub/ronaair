@@ -1,0 +1,173 @@
+{
+  "D1": {
+    "dataset": "D1_AQUAPONDS",
+    "n_rows_in_file": 124,
+    "n_rows_with_data": 0,
+    "n_nonnull_cells": 0,
+    "columns": [
+      "station",
+      "Date",
+      "Time",
+      "NITRATE(PPM)",
+      "PH",
+      "AMMONIA(mg/l)",
+      "TEMP",
+      "DO",
+      "TURBIDITY",
+      "MANGANESE(mg/l)"
+    ],
+    "has_pH": true,
+    "has_DO": true,
+    "has_temperature": true,
+    "has_turbidity": true,
+    "has_tds_ec": false,
+    "has_timestamp": true,
+    "has_site_id": true,
+    "has_risk_label": false,
+    "has_fish_outcome": false,
+    "verdict": "NOT SUITABLE",
+    "reason": "File hanya berisi baris header. Nol observasi aktual. Skema kolom menjanjikan station/Date/Time/NITRATE/PH/AMMONIA/TEMP/DO/TURBIDITY/MANGANESE tetapi tidak ada satu pun nilai. Tidak dapat dipakai untuk training, validation, maupun distribution reference."
+  },
+  "D2": {
+    "dataset": "D2_FISHPOND_MULTICLASS",
+    "label_recovery_single_feature": {
+      "orp_mV": 1.0,
+      "ec_uScm": 1.0,
+      "tds_mgL": 0.8472,
+      "turbidity_NTU": 1.0,
+      "temp_C": 0.9991,
+      "pH": 0.9954,
+      "do_mgL": 0.9981
+    },
+    "label_driver": "orp_mV",
+    "label_recovery_accuracy": 1.0,
+    "features_that_fully_recover_label": [
+      "orp_mV",
+      "ec_uScm",
+      "turbidity_NTU",
+      "temp_C"
+    ],
+    "features_that_nearly_recover_label": [
+      "pH",
+      "do_mgL"
+    ],
+    "recovered_rule": "|--- orp_mV <= 499.92\n|   |--- orp_mV <= 49.94\n|   |   |--- orp_mV <= -50.19\n|   |   |   |--- class: Severe\n|   |   |--- orp_mV >  -50.19\n|   |   |   |--- class: Warning\n|   |--- orp_mV >  49.94\n|   |   |--- orp_mV <= 150.06\n|   |   |   |--- class: Caution\n|   |   |--- orp_mV >  150.06\n|   |   |   |--- orp_mV <= 399.93\n|   |   |   |   |--- class: Normal\n|   |   |   |--- orp_mV >  399.93\n|   |   |   |   |--- class: Caution\n|--- orp_mV >  499.92\n|   |--- orp_mV <= 649.76\n|   |   |--- class: Warning\n|   |--- orp_mV >  649.76\n|   |   |--- class: Severe\n",
+    "generative_structure": "NESTED CONCENTRIC BANDS (setiap kelas adalah pita jarak dari nilai optimal; kelas yang lebih parah = pita yang lebih lebar dan melingkupi kelas ringan)",
+    "class_bounds_on_driver": {
+      "Severe": {
+        "min": -249.6,
+        "max": 898.88,
+        "n": 367
+      },
+      "Warning": {
+        "min": -49.93,
+        "max": 649.52,
+        "n": 478
+      },
+      "Caution": {
+        "min": 50.06,
+        "max": 499.67,
+        "n": 670
+      },
+      "Normal": {
+        "min": 150.25,
+        "max": 399.76,
+        "n": 638
+      }
+    },
+    "label_type": "RULE-DERIVED (label tertanam di SEMUA parameter sebagai pita rentang per kelas)",
+    "label_recovery_without_driver": 1.0,
+    "hypoxic_rows_labelled_as": {
+      "Severe": 178,
+      "Warning": 127
+    },
+    "do_min_per_class": {
+      "Caution": 4.0,
+      "Normal": 5.02,
+      "Severe": 0.52,
+      "Warning": 2.0
+    },
+    "n_rows": 2153,
+    "n_classes": 4,
+    "classes": [
+      "Caution",
+      "Normal",
+      "Severe",
+      "Warning"
+    ],
+    "class_distribution": {
+      "Caution": 670,
+      "Normal": 638,
+      "Warning": 478,
+      "Severe": 367
+    },
+    "has_timestamp": true,
+    "has_pond_id": false,
+    "sampling_interval": "0 days 00:05:00",
+    "timestamp_min": "2026-01-01 00:00:00",
+    "timestamp_max": "2026-01-08 11:20:00",
+    "missing": 0,
+    "duplicates": 0
+  },
+  "D3": {
+    "dataset": "D3_IOTMLCQ_2024",
+    "health_status_equals_thermal_risk": true,
+    "thermal_risk_threshold_on_temperature": 28.00357142857143,
+    "unique_wq_observations": 360,
+    "interpolation_step_repeat_fraction": 0.2535,
+    "corr_survival_vs_temperature": 0.674,
+    "n_rows": 4383,
+    "n_columns": 28,
+    "datetime_min": "2024-01-01 00:00:00",
+    "datetime_max": "2024-07-01 14:00:00",
+    "has_pond_id": false,
+    "constant_label_columns": [
+      "Low Oxygen Alert"
+    ],
+    "leakage_notes": [
+      "Health Status adalah fungsi deterministik 1:1 dari Thermal Risk Index (bukan outcome independen).",
+      "Thermal Risk Index adalah threshold deterministik pada suhu (~28.00 C), bukan label ahli maupun outcome terobservasi."
+    ],
+    "label_type": "DERIVED LABEL / POTENTIAL TARGET LEAKAGE"
+  },
+  "D4": {
+    "dataset": "D4_AQUAPONIC_IOT",
+    "n_rows_raw": 505730,
+    "n_rows_filtered": 118286,
+    "n_sites_ponds": 1,
+    "has_timestamp": true,
+    "ts_min": "2023-01-26 10:38:00",
+    "ts_max": "2023-03-22 17:53:00",
+    "parameters": [
+      "water_pH",
+      "TDS",
+      "water_temp"
+    ],
+    "parameters_absent": [
+      "dissolved_oxygen",
+      "turbidity",
+      "EC",
+      "risk_label",
+      "fish_outcome"
+    ],
+    "median_obs_per_minute": 9.0,
+    "ph_out_of_physical_range_rows": 219,
+    "filter_rule_reproduced_exactly": true,
+    "filter_bounds": {
+      "pH": [
+        6.5,
+        8.5
+      ],
+      "water_temp": [
+        24.0,
+        26.19
+      ],
+      "TDS": [
+        241.0,
+        498.0
+      ]
+    },
+    "retention_rate": 0.2339,
+    "label_type": "NO LABEL (unlabelled sensor stream)"
+  }
+}

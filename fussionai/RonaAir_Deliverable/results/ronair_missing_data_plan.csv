@@ -1,0 +1,11 @@
+missing_variable,why_needed,public_dataset_can_provide,existing_ronaair_model_can_provide,must_collect_locally,priority
+Foto kolam + pembacaan sensor bersinkron (timestamp sama),"Satu-satunya cara memvalidasi bahwa visual_score benar-benar membawa informasi risiko di luar sensor. Tanpa ini, seluruh klaim fusion tidak teruji.",TIDAK — tidak satu pun dari 4 dataset memuat citra.,"Sebagian — model CV menghasilkan visual_score, tetapi tanpa sensor berpasangan tidak dapat divalidasi.",YA,1
+Label risiko dari pakar (penyuluh/ahli budidaya),"Semua label pada dataset publik adalah turunan aturan. Tanpa label independen, model apa pun hanya meniru aturan.",TIDAK,TIDAK,YA,1
+"Outcome ikan terobservasi (mortalitas, stres, penyakit)",Memungkinkan berpindah dari rule emulation ke prediksi risiko nyata.,TIDAK — D3 memiliki survival rate tetapi kolinear dengan suhu dan hasil interpolasi.,TIDAK,YA,1
+DO terukur (DO meter) berpasangan dengan do_est,"Memvalidasi soft-sensor DO. Tanpa ini, rule DO berjalan pada estimasi yang belum teruji.",SEBAGIAN — D2 punya DO tetapi sintetis; D4 tidak punya DO.,TIDAK,YA,1
+Pond/site ID pada data multi-kolam,"Tanpa ID kolam, group-aware split mustahil, sehingga generalisasi antar kolam tidak dapat diukur.","TIDAK — D2, D3, D4 semuanya satu aliran tanpa ID kolam.",TIDAK,YA,2
+Turbidity terukur berpasangan dengan foto,Menguji apakah turbidity layak menjadi proxy kanal visual (asumsi yang saat ini dipakai hanya sebagai UNVALIDATED PROXY).,SEBAGIAN — D2/D3 punya turbidity tetapi tanpa foto.,TIDAK,YA,2
+"Data kolam Indonesia (iklim, spesies, praktik budidaya lokal)",Ketiga dataset berasal dari konteks non-Indonesia/sintetis; domain shift tidak dapat dikoreksi tanpa data lokal.,TIDAK,TIDAK,YA,2
+Rentang validasi model pH-foto (PolynomialRidge2),Rule R040 dan peringatan ekstrapolasi memerlukan batas validasi model pH foto.,TIDAK,"YA — ada di artefak model pH RonaAir, perlu diimpor.","TIDAK (sudah ada, tinggal ditautkan)",2
+Amonia / nitrit / nitrat,Penyebab kematian yang umum dan tidak terwakili oleh pH/suhu/DO saja. Skema kolom D1 menjanjikannya tetapi filenya kosong.,TIDAK (D1 kosong),TIDAK,YA,3
+"Riwayat intervensi (aerasi, ganti air, pakan) yang tercatat waktu",Membedakan perbaikan alami dari hasil tindakan; mencegah intervention leakage.,SEBAGIAN — D3 punya kolom intervensi tetapi D3 tidak layak pakai.,TIDAK,YA,3

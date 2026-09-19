@@ -1,0 +1,9 @@
+check,value,note
+duplicate rows (fitur identik),0.0,0 diharapkan
+duplicate timestamp,0.0,0 diharapkan
+pond/site ID tersedia,0.0,TIDAK ADA -> group split mustahil
+future information dalam fitur,0.0,Semua fitur lag memakai shift(+1) = masa lalu saja; tidak ada shift negatif
+label-derived column dijadikan predictor,0.0,Kolom `class`/`risk_status`/`severity` tidak pernah masuk X
+intervention / post-event feature,0.0,D2 tidak memuat kolom intervensi; D3 memuatnya tetapi D3 tidak dipakai training
+structural target leakage (label = fungsi predictor),1.0,"target dapat direproduksi 1.0000 dari orp_mV; set B/C/E memuat fitur ini -> hasilnya adalah rule emulation, bukan prediksi."
+timestamp terkonfound dengan kelas,0.9633,"Korelasi Spearman urutan waktu vs severity; nilai mendekati 1 berarti timestamp hanyalah penomoran ulang urutan kelas, bukan dinamika kolam."

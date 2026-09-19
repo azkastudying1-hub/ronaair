@@ -1,0 +1,6 @@
+dataset,table,file_name,file_format,file_size_bytes,n_rows,n_columns,total_missing,duplicate_rows,has_timestamp,timestamp_cols,has_site_pond,site_pond_cols,has_sample_id,n_target_candidates,target_candidates,constant_target_candidates,n_images
+D1_AQUAPONDS,main,Aquaponds_Dataset-selected-columns.csv,csv,1322,124,10,1240,123,True,Date|Time,True,station,False,0,,,0
+D2_FISHPOND_MULTICLASS,main,fishpond_dataset_multiclass_2153.csv,csv,158936,2153,10,0,0,True,timestamp,False,,True,1,class,,0
+D3_IOTMLCQ_2024,Sheet1,Data_Model_IoTMLCQ_2024.xlsx,xlsx,589563,4383,28,0,0,True,Datetime,False,,False,11,Month|Oxygenation Interventions|Corrective Interventions|Average Temperature (°C)|High Temperature (°C)|Low Temperature (°C)|Oxygenation Automatic|Corrective Measures|Thermal Risk Index|Low Oxygen Alert|Health Status,Average Temperature (°C)|High Temperature (°C)|Low Temperature (°C)|Low Oxygen Alert,0
+D4_AQUAPONIC_IOT,filtered,A_Simple_Dataset_of_Aquaponic_Fish_Pond_Water_Quality_Measurement_using_Internet_of_Things_devices.zip,zip,3875594,118286,5,0,0,True,created_date,False,,True,0,,,0
+D4_AQUAPONIC_IOT,raw,A_Simple_Dataset_of_Aquaponic_Fish_Pond_Water_Quality_Measurement_using_Internet_of_Things_devices.zip,zip,3875594,505730,5,0,0,True,created_date,False,,True,0,,,0

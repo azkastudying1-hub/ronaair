@@ -1,0 +1,41 @@
+{
+  "ph_sensor": {
+    "source_dataset": "D4_AQUAPONIC_IOT (raw, pembacaan non-fisik dibuang)",
+    "n": 505511,
+    "p01": 5.56,
+    "p05": 5.79,
+    "median": 7.84,
+    "p95": 10.17,
+    "p99": 11.24,
+    "min": 5.51,
+    "max": 14.0,
+    "abs_delta_5min_p99": 1.0809,
+    "abs_delta_5min_median": 0.089
+  },
+  "water_temp": {
+    "source_dataset": "D4_AQUAPONIC_IOT (raw, pembacaan non-fisik dibuang)",
+    "n": 505511,
+    "p01": 22.0,
+    "p05": 22.63,
+    "median": 24.19,
+    "p95": 25.88,
+    "p99": 26.69,
+    "min": 21.63,
+    "max": 27.19,
+    "abs_delta_5min_p99": 0.07,
+    "abs_delta_5min_median": 0.0037
+  },
+  "tds_ppm": {
+    "source_dataset": "D4_AQUAPONIC_IOT (raw, pembacaan non-fisik dibuang)",
+    "n": 505511,
+    "p01": 268.0,
+    "p05": 296.0,
+    "median": 342.0,
+    "p95": 574.0,
+    "p99": 1028.0,
+    "min": 200.0,
+    "max": 1813.0,
+    "abs_delta_5min_p99": 355.46,
+    "abs_delta_5min_median": 12.7625
+  }
+}

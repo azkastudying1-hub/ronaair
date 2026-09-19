@@ -1,0 +1,7 @@
+source_dataset,source_label,ronair_label,source_severity_rank,ronair_severity_rank,mapping_reason,mapping_status
+D2_FISHPOND_MULTICLASS,Normal,NORMAL,0.0,0.0,Kedua skema menempatkan tingkat ini sebagai kondisi operasi tanpa tindakan.,"JUSTIFIED (ordinal, monoton)"
+D2_FISHPOND_MULTICLASS,Caution,WASPADA,1.0,1.0,Tingkat kedua pada tangga severity; keduanya berarti 'amati lebih sering'.,"JUSTIFIED (ordinal, monoton)"
+D2_FISHPOND_MULTICLASS,Warning,SIAGA,2.0,2.0,Tingkat ketiga; keduanya menandakan perlu tindakan korektif.,"JUSTIFIED (ordinal, monoton)"
+D2_FISHPOND_MULTICLASS,Severe,DARURAT,3.0,3.0,Tingkat tertinggi; keduanya menandakan intervensi segera.,"JUSTIFIED (ordinal, monoton)"
+D3_IOTMLCQ_2024,Stable / At Risk,TIDAK DIPETAKAN,,,"Hanya 2 tingkat, dibentuk dari threshold suhu tunggal, dan identik 1:1 dengan Thermal Risk Index. Memetakannya ke 4 tingkat RonaAir akan mengarang informasi.",REJECTED
+D4_AQUAPONIC_IOT,(tidak ada label),TIDAK DIPETAKAN,,,Dataset tidak berlabel.,NOT APPLICABLE

@@ -1,0 +1,23 @@
+{
+  "status": "EXTERNAL VALIDATION NOT AVAILABLE",
+  "attempted_pairs": [
+    {
+      "train_on": "D2_FISHPOND_MULTICLASS",
+      "test_on": "D3_IOTMLCQ_2024",
+      "possible": false,
+      "reason": "Semantik target tidak kompatibel. D2 memakai 4 tingkat berbasis turbidity; D3 memakai 2 tingkat berbasis threshold suhu dan tidak memiliki turbidity pada rentang yang sebanding. Memetakan Stable/At Risk ke 4 kelas akan mengarang informasi."
+    },
+    {
+      "train_on": "D2_FISHPOND_MULTICLASS",
+      "test_on": "D4_AQUAPONIC_IOT",
+      "possible": false,
+      "reason": "D4 tidak memiliki label risiko sama sekali, dan tidak memiliki DO maupun turbidity. Tidak ada target untuk dievaluasi."
+    },
+    {
+      "train_on": "D2_FISHPOND_MULTICLASS",
+      "test_on": "D1_AQUAPONDS",
+      "possible": false,
+      "reason": "D1 tidak berisi observasi."
+    }
+  ]
+}

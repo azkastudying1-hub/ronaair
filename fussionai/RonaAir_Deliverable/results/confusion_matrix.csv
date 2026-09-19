@@ -1,0 +1,5 @@
+true_label,pred_NORMAL,pred_WASPADA,pred_SIAGA,pred_DARURAT
+true_NORMAL,128,0,0,0
+true_WASPADA,1,133,0,0
+true_SIAGA,0,1,94,1
+true_DARURAT,0,0,0,73

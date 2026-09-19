@@ -1,0 +1,766 @@
+{
+  "D1_AQUAPONDS::main": {
+    "dataset_name": "D1_AQUAPONDS",
+    "table": "main",
+    "file_name": "Aquaponds_Dataset-selected-columns.csv",
+    "file_format": "csv",
+    "file_size_bytes": 1322,
+    "n_rows": 124,
+    "n_columns": 10,
+    "column_names": [
+      "station",
+      "Date",
+      "Time",
+      "NITRATE(PPM)",
+      "PH",
+      "AMMONIA(mg/l)",
+      "TEMP",
+      "DO",
+      "TURBIDITY",
+      "MANGANESE(mg/l)"
+    ],
+    "dtypes": {
+      "station": "float64",
+      "Date": "float64",
+      "Time": "float64",
+      "NITRATE(PPM)": "float64",
+      "PH": "float64",
+      "AMMONIA(mg/l)": "float64",
+      "TEMP": "float64",
+      "DO": "float64",
+      "TURBIDITY": "float64",
+      "MANGANESE(mg/l)": "float64"
+    },
+    "missing_values": {
+      "station": 124,
+      "Date": 124,
+      "Time": 124,
+      "NITRATE(PPM)": 124,
+      "PH": 124,
+      "AMMONIA(mg/l)": 124,
+      "TEMP": 124,
+      "DO": 124,
+      "TURBIDITY": 124,
+      "MANGANESE(mg/l)": 124
+    },
+    "total_missing": 1240,
+    "duplicate_rows": 123,
+    "numeric_ranges": {
+      "station": {
+        "min": NaN,
+        "max": NaN,
+        "mean": NaN,
+        "std": NaN,
+        "n_unique": 0
+      },
+      "Date": {
+        "min": NaN,
+        "max": NaN,
+        "mean": NaN,
+        "std": NaN,
+        "n_unique": 0
+      },
+      "Time": {
+        "min": NaN,
+        "max": NaN,
+        "mean": NaN,
+        "std": NaN,
+        "n_unique": 0
+      },
+      "NITRATE(PPM)": {
+        "min": NaN,
+        "max": NaN,
+        "mean": NaN,
+        "std": NaN,
+        "n_unique": 0
+      },
+      "PH": {
+        "min": NaN,
+        "max": NaN,
+        "mean": NaN,
+        "std": NaN,
+        "n_unique": 0
+      },
+      "AMMONIA(mg/l)": {
+        "min": NaN,
+        "max": NaN,
+        "mean": NaN,
+        "std": NaN,
+        "n_unique": 0
+      },
+      "TEMP": {
+        "min": NaN,
+        "max": NaN,
+        "mean": NaN,
+        "std": NaN,
+        "n_unique": 0
+      },
+      "DO": {
+        "min": NaN,
+        "max": NaN,
+        "mean": NaN,
+        "std": NaN,
+        "n_unique": 0
+      },
+      "TURBIDITY": {
+        "min": NaN,
+        "max": NaN,
+        "mean": NaN,
+        "std": NaN,
+        "n_unique": 0
+      },
+      "MANGANESE(mg/l)": {
+        "min": NaN,
+        "max": NaN,
+        "mean": NaN,
+        "std": NaN,
+        "n_unique": 0
+      }
+    },
+    "timestamp_columns": [
+      "Date",
+      "Time"
+    ],
+    "site_pond_columns": [
+      "station"
+    ],
+    "sample_id_columns": [],
+    "target_candidates": [],
+    "n_images": 0,
+    "image_metadata": "NOT APPLICABLE — dataset tabular, tidak ada citra"
+  },
+  "D2_FISHPOND_MULTICLASS::main": {
+    "dataset_name": "D2_FISHPOND_MULTICLASS",
+    "table": "main",
+    "file_name": "fishpond_dataset_multiclass_2153.csv",
+    "file_format": "csv",
+    "file_size_bytes": 158936,
+    "n_rows": 2153,
+    "n_columns": 10,
+    "column_names": [
+      "sample_id",
+      "timestamp",
+      "orp_mV",
+      "ec_uScm",
+      "tds_mgL",
+      "turbidity_NTU",
+      "temp_C",
+      "pH",
+      "do_mgL",
+      "class"
+    ],
+    "dtypes": {
+      "sample_id": "int64",
+      "timestamp": "str",
+      "orp_mV": "float64",
+      "ec_uScm": "float64",
+      "tds_mgL": "float64",
+      "turbidity_NTU": "float64",
+      "temp_C": "float64",
+      "pH": "float64",
+      "do_mgL": "float64",
+      "class": "str"
+    },
+    "missing_values": {
+      "sample_id": 0,
+      "timestamp": 0,
+      "orp_mV": 0,
+      "ec_uScm": 0,
+      "tds_mgL": 0,
+      "turbidity_NTU": 0,
+      "temp_C": 0,
+      "pH": 0,
+      "do_mgL": 0,
+      "class": 0
+    },
+    "total_missing": 0,
+    "duplicate_rows": 0,
+    "numeric_ranges": {
+      "sample_id": {
+        "min": 1.0,
+        "max": 2153.0,
+        "mean": 1077.0,
+        "std": 621.6618855937687,
+        "n_unique": 2153
+      },
+      "orp_mV": {
+        "min": -249.6,
+        "max": 898.88,
+        "mean": 291.2544263817929,
+        "std": 261.01944902139644,
+        "n_unique": 2136
+      },
+      "ec_uScm": {
+        "min": 1.04,
+        "max": 4965.58,
+        "mean": 655.7557268927079,
+        "std": 1025.0074253690348,
+        "n_unique": 2083
+      },
+      "tds_mgL": {
+        "min": 0.0,
+        "max": 3267.23,
+        "mean": 359.80903855085927,
+        "std": 563.781797475526,
+        "n_unique": 1996
+      },
+      "turbidity_NTU": {
+        "min": 1.02,
+        "max": 598.68,
+        "mean": 101.35298188574083,
+        "std": 138.43802473187,
+        "n_unique": 1996
+      },
+      "temp_C": {
+        "min": 15.0,
+        "max": 37.99,
+        "mean": 27.43651184393869,
+        "std": 5.193092338950659,
+        "n_unique": 1294
+      },
+      "pH": {
+        "min": 4.51,
+        "max": 10.5,
+        "mean": 7.556019507663725,
+        "std": 1.5426286808014333,
+        "n_unique": 563
+      },
+      "do_mgL": {
+        "min": 0.52,
+        "max": 15.98,
+        "mean": 7.087937761263354,
+        "std": 3.6008867043358683,
+        "n_unique": 1043
+      }
+    },
+    "timestamp_columns": [
+      "timestamp"
+    ],
+    "site_pond_columns": [],
+    "sample_id_columns": [
+      "sample_id"
+    ],
+    "target_candidates": [
+      {
+        "column": "class",
+        "n_unique": 4,
+        "values": [
+          "Caution",
+          "Normal",
+          "Severe",
+          "Warning"
+        ],
+        "variability": "OK"
+      }
+    ],
+    "n_images": 0,
+    "image_metadata": "NOT APPLICABLE — dataset tabular, tidak ada citra"
+  },
+  "D3_IOTMLCQ_2024::Sheet1": {
+    "dataset_name": "D3_IOTMLCQ_2024",
+    "table": "Sheet1",
+    "file_name": "Data_Model_IoTMLCQ_2024.xlsx",
+    "file_format": "xlsx",
+    "file_size_bytes": 589563,
+    "n_rows": 4383,
+    "n_columns": 28,
+    "column_names": [
+      "Datetime",
+      "Month",
+      "Average Fish Weight (g)",
+      "Survival Rate (%)",
+      "Disease Occurrence (Cases)",
+      "Temperature (°C)",
+      "Dissolved Oxygen (mg/L)",
+      "pH",
+      "Turbidity (NTU)",
+      "Month_Num",
+      "month_x",
+      "Oxygenation Interventions",
+      "Corrective Interventions",
+      "Average Temperature (°C)",
+      "High Temperature (°C)",
+      "Low Temperature (°C)",
+      "Precipitation (inches)",
+      "month_y",
+      "day",
+      "hour",
+      "oxigeno_scaled",
+      "ph",
+      "turbidez",
+      "Oxygenation Automatic",
+      "Corrective Measures",
+      "Thermal Risk Index",
+      "Low Oxygen Alert",
+      "Health Status"
+    ],
+    "dtypes": {
+      "Datetime": "datetime64[us]",
+      "Month": "str",
+      "Average Fish Weight (g)": "float64",
+      "Survival Rate (%)": "float64",
+      "Disease Occurrence (Cases)": "float64",
+      "Temperature (°C)": "float64",
+      "Dissolved Oxygen (mg/L)": "float64",
+      "pH": "float64",
+      "Turbidity (NTU)": "float64",
+      "Month_Num": "float64",
+      "month_x": "float64",
+      "Oxygenation Interventions": "int64",
+      "Corrective Interventions": "int64",
+      "Average Temperature (°C)": "float64",
+      "High Temperature (°C)": "float64",
+      "Low Temperature (°C)": "float64",
+      "Precipitation (inches)": "float64",
+      "month_y": "float64",
+      "day": "float64",
+      "hour": "float64",
+      "oxigeno_scaled": "float64",
+      "ph": "float64",
+      "turbidez": "float64",
+      "Oxygenation Automatic": "str",
+      "Corrective Measures": "str",
+      "Thermal Risk Index": "str",
+      "Low Oxygen Alert": "str",
+      "Health Status": "str"
+    },
+    "missing_values": {
+      "Datetime": 0,
+      "Month": 0,
+      "Average Fish Weight (g)": 0,
+      "Survival Rate (%)": 0,
+      "Disease Occurrence (Cases)": 0,
+      "Temperature (°C)": 0,
+      "Dissolved Oxygen (mg/L)": 0,
+      "pH": 0,
+      "Turbidity (NTU)": 0,
+      "Month_Num": 0,
+      "month_x": 0,
+      "Oxygenation Interventions": 0,
+      "Corrective Interventions": 0,
+      "Average Temperature (°C)": 0,
+      "High Temperature (°C)": 0,
+      "Low Temperature (°C)": 0,
+      "Precipitation (inches)": 0,
+      "month_y": 0,
+      "day": 0,
+      "hour": 0,
+      "oxigeno_scaled": 0,
+      "ph": 0,
+      "turbidez": 0,
+      "Oxygenation Automatic": 0,
+      "Corrective Measures": 0,
+      "Thermal Risk Index": 0,
+      "Low Oxygen Alert": 0,
+      "Health Status": 0
+    },
+    "total_missing": 0,
+    "duplicate_rows": 0,
+    "numeric_ranges": {
+      "Average Fish Weight (g)": {
+        "min": 262.05,
+        "max": 286.5,
+        "mean": 273.3910882956879,
+        "std": 8.675050207359911,
+        "n_unique": 357
+      },
+      "Survival Rate (%)": {
+        "min": 92.85,
+        "max": 96.3,
+        "mean": 93.85726899383984,
+        "std": 1.3374269078080854,
+        "n_unique": 360
+      },
+      "Disease Occurrence (Cases)": {
+        "min": 1.0,
+        "max": 2.0,
+        "mean": 1.159479808350445,
+        "std": 0.3614081879537205,
+        "n_unique": 92
+      },
+      "Temperature (°C)": {
+        "min": 26.5,
+        "max": 28.35,
+        "mean": 27.34490759753593,
+        "std": 0.6197335038579607,
+        "n_unique": 360
+      },
+      "Dissolved Oxygen (mg/L)": {
+        "min": 6.34,
+        "max": 7.89,
+        "mean": 6.929650924024641,
+        "std": 0.631682645132167,
+        "n_unique": 359
+      },
+      "pH": {
+        "min": 7.34,
+        "max": 7.98,
+        "mean": 7.829938398357291,
+        "std": 0.2143843801687658,
+        "n_unique": 359
+      },
+      "Turbidity (NTU)": {
+        "min": 2.79,
+        "max": 3.98,
+        "mean": 3.3056399726214925,
+        "std": 0.4310414154852089,
+        "n_unique": 328
+      },
+      "Month_Num": {
+        "min": 1.0,
+        "max": 6.0,
+        "mean": 3.5708418891170433,
+        "std": 1.7165620735562765,
+        "n_unique": 360
+      },
+      "month_x": {
+        "min": 1.0,
+        "max": 6.0,
+        "mean": 3.5708418891170433,
+        "std": 1.7165620735562765,
+        "n_unique": 360
+      },
+      "Oxygenation Interventions": {
+        "min": 0.0,
+        "max": 1.0,
+        "mean": 0.1996349532283824,
+        "std": 0.3997715618595811,
+        "n_unique": 2
+      },
+      "Corrective Interventions": {
+        "min": 0.0,
+        "max": 6.0,
+        "mean": 1.3305954825462012,
+        "std": 1.964423836648619,
+        "n_unique": 6
+      },
+      "Average Temperature (°C)": {
+        "min": 29.1,
+        "max": 29.1,
+        "mean": 29.099999999999998,
+        "std": 3.553119031494934e-15,
+        "n_unique": 1
+      },
+      "High Temperature (°C)": {
+        "min": 33.9,
+        "max": 33.9,
+        "mean": 33.9,
+        "std": 0.0,
+        "n_unique": 1
+      },
+      "Low Temperature (°C)": {
+        "min": 24.1,
+        "max": 24.1,
+        "mean": 24.099999999999998,
+        "std": 3.553119031494934e-15,
+        "n_unique": 1
+      },
+      "Precipitation (inches)": {
+        "min": 0.2,
+        "max": 5.96,
+        "mean": 2.7521355236139633,
+        "std": 2.26013586613894,
+        "n_unique": 360
+      },
+      "month_y": {
+        "min": 1.0,
+        "max": 6.0,
+        "mean": 3.5708418891170433,
+        "std": 1.7165620735562765,
+        "n_unique": 360
+      },
+      "day": {
+        "min": 1.0,
+        "max": 28.0,
+        "mean": 14.82340862422998,
+        "std": 8.028950540416753,
+        "n_unique": 673
+      },
+      "hour": {
+        "min": 0.0,
+        "max": 5.0,
+        "mean": 2.5598904859685145,
+        "std": 1.4903569989913545,
+        "n_unique": 180
+      },
+      "oxigeno_scaled": {
+        "min": 7.351138957651082,
+        "max": 8.900171159113427,
+        "mean": 8.128747907478358,
+        "std": 0.20395395673879288,
+        "n_unique": 4278
+      },
+      "ph": {
+        "min": 0.1524597097016438,
+        "max": 1.029118413679345,
+        "mean": 0.4971718796790204,
+        "std": 0.20502865429902078,
+        "n_unique": 4278
+      },
+      "turbidez": {
+        "min": -0.0610956003979587,
+        "max": 1.016684378750718,
+        "mean": 0.06707858297757771,
+        "std": 0.20435816360489303,
+        "n_unique": 4278
+      }
+    },
+    "timestamp_columns": [
+      "Datetime"
+    ],
+    "site_pond_columns": [],
+    "sample_id_columns": [],
+    "target_candidates": [
+      {
+        "column": "Month",
+        "n_unique": 7,
+        "values": [
+          "April",
+          "February",
+          "January",
+          "July",
+          "June",
+          "March",
+          "May"
+        ],
+        "variability": "OK"
+      },
+      {
+        "column": "Oxygenation Interventions",
+        "n_unique": 2,
+        "values": [
+          "0",
+          "1"
+        ],
+        "variability": "OK"
+      },
+      {
+        "column": "Corrective Interventions",
+        "n_unique": 6,
+        "values": [
+          "0",
+          "1",
+          "2",
+          "4",
+          "5",
+          "6"
+        ],
+        "variability": "OK"
+      },
+      {
+        "column": "Average Temperature (°C)",
+        "n_unique": 1,
+        "values": [
+          "29.1"
+        ],
+        "variability": "CONSTANT (0 informasi)"
+      },
+      {
+        "column": "High Temperature (°C)",
+        "n_unique": 1,
+        "values": [
+          "33.9"
+        ],
+        "variability": "CONSTANT (0 informasi)"
+      },
+      {
+        "column": "Low Temperature (°C)",
+        "n_unique": 1,
+        "values": [
+          "24.1"
+        ],
+        "variability": "CONSTANT (0 informasi)"
+      },
+      {
+        "column": "Oxygenation Automatic",
+        "n_unique": 2,
+        "values": [
+          "No",
+          "Yes"
+        ],
+        "variability": "OK"
+      },
+      {
+        "column": "Corrective Measures",
+        "n_unique": 2,
+        "values": [
+          "No",
+          "Yes"
+        ],
+        "variability": "OK"
+      },
+      {
+        "column": "Thermal Risk Index",
+        "n_unique": 2,
+        "values": [
+          "High",
+          "Normal"
+        ],
+        "variability": "OK"
+      },
+      {
+        "column": "Low Oxygen Alert",
+        "n_unique": 1,
+        "values": [
+          "Safe"
+        ],
+        "variability": "CONSTANT (0 informasi)"
+      },
+      {
+        "column": "Health Status",
+        "n_unique": 2,
+        "values": [
+          "At Risk",
+          "Stable"
+        ],
+        "variability": "OK"
+      }
+    ],
+    "n_images": 0,
+    "image_metadata": "NOT APPLICABLE — dataset tabular, tidak ada citra"
+  },
+  "D4_AQUAPONIC_IOT::filtered": {
+    "dataset_name": "D4_AQUAPONIC_IOT",
+    "table": "filtered",
+    "file_name": "A_Simple_Dataset_of_Aquaponic_Fish_Pond_Water_Quality_Measurement_using_Internet_of_Things_devices.zip",
+    "file_format": "zip",
+    "file_size_bytes": 3875594,
+    "n_rows": 118286,
+    "n_columns": 5,
+    "column_names": [
+      "id",
+      "created_date",
+      "water_pH",
+      "TDS",
+      "water_temp"
+    ],
+    "dtypes": {
+      "id": "int64",
+      "created_date": "str",
+      "water_pH": "float64",
+      "TDS": "int64",
+      "water_temp": "float64"
+    },
+    "missing_values": {
+      "id": 0,
+      "created_date": 0,
+      "water_pH": 0,
+      "TDS": 0,
+      "water_temp": 0
+    },
+    "total_missing": 0,
+    "duplicate_rows": 0,
+    "numeric_ranges": {
+      "id": {
+        "min": 181775.0,
+        "max": 818730.0,
+        "mean": 392328.65571580746,
+        "std": 167174.0660931759,
+        "n_unique": 118286
+      },
+      "water_pH": {
+        "min": 6.5,
+        "max": 8.5,
+        "mean": 7.508480547148438,
+        "std": 0.5557798156852919,
+        "n_unique": 201
+      },
+      "TDS": {
+        "min": 241.0,
+        "max": 498.0,
+        "mean": 335.41649053987794,
+        "std": 43.738700093840386,
+        "n_unique": 231
+      },
+      "water_temp": {
+        "min": 24.0,
+        "max": 26.19,
+        "mean": 24.656045178634834,
+        "std": 0.4523975735621846,
+        "n_unique": 36
+      }
+    },
+    "timestamp_columns": [
+      "created_date"
+    ],
+    "site_pond_columns": [],
+    "sample_id_columns": [
+      "id"
+    ],
+    "target_candidates": [],
+    "n_images": 0,
+    "image_metadata": "NOT APPLICABLE — dataset tabular, tidak ada citra"
+  },
+  "D4_AQUAPONIC_IOT::raw": {
+    "dataset_name": "D4_AQUAPONIC_IOT",
+    "table": "raw",
+    "file_name": "A_Simple_Dataset_of_Aquaponic_Fish_Pond_Water_Quality_Measurement_using_Internet_of_Things_devices.zip",
+    "file_format": "zip",
+    "file_size_bytes": 3875594,
+    "n_rows": 505730,
+    "n_columns": 5,
+    "column_names": [
+      "id",
+      "created_date",
+      "water_pH",
+      "TDS",
+      "water_temp"
+    ],
+    "dtypes": {
+      "id": "int64",
+      "created_date": "str",
+      "water_pH": "float64",
+      "TDS": "int64",
+      "water_temp": "float64"
+    },
+    "missing_values": {
+      "id": 0,
+      "created_date": 0,
+      "water_pH": 0,
+      "TDS": 0,
+      "water_temp": 0
+    },
+    "total_missing": 0,
+    "duplicate_rows": 0,
+    "numeric_ranges": {
+      "id": {
+        "min": 181740.0,
+        "max": 818730.0,
+        "mean": 476740.06585925294,
+        "std": 169157.78878020498,
+        "n_unique": 505730
+      },
+      "water_pH": {
+        "min": 5.51,
+        "max": 15.78,
+        "mean": 7.900375437486406,
+        "std": 1.3864508310181434,
+        "n_unique": 932
+      },
+      "TDS": {
+        "min": 200.0,
+        "max": 1813.0,
+        "mean": 388.97919245447173,
+        "std": 137.26594417441774,
+        "n_unique": 494
+      },
+      "water_temp": {
+        "min": 21.63,
+        "max": 27.19,
+        "mean": 24.187189547782417,
+        "std": 0.973158902937846,
+        "n_unique": 90
+      }
+    },
+    "timestamp_columns": [
+      "created_date"
+    ],
+    "site_pond_columns": [],
+    "sample_id_columns": [
+      "id"
+    ],
+    "target_candidates": [],
+    "n_images": 0,
+    "image_metadata": "NOT APPLICABLE — dataset tabular, tidak ada citra"
+  }
+}

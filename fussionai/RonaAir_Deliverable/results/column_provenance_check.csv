@@ -1,0 +1,31 @@
+dataset,table,column,name_implies,assumed_unit,observed_min,observed_max,verification_status,note
+D1_AQUAPONDS,main,PH,ph,unit pH,,,UNVERIFIED,kolom kosong
+D1_AQUAPONDS,main,TEMP,temperature,deg C,,,UNVERIFIED,kolom kosong
+D1_AQUAPONDS,main,DO,do,mg/L,,,UNVERIFIED,kolom kosong
+D1_AQUAPONDS,main,TURBIDITY,turbidity,NTU,,,UNVERIFIED,kolom kosong
+D2_FISHPOND_MULTICLASS,main,orp_mV,orp,mV,-249.6,898.88,PLAUSIBLE,100% nilai dalam rentang fisik -2000.0-2000.0 mV
+D2_FISHPOND_MULTICLASS,main,ec_uScm,ec,uS/cm,1.04,4965.58,PLAUSIBLE,100% nilai dalam rentang fisik 0.0-100000.0 uS/cm
+D2_FISHPOND_MULTICLASS,main,tds_mgL,tds,mg/L atau ppm,0.0,3267.23,PLAUSIBLE,100% nilai dalam rentang fisik 0.0-50000.0 mg/L atau ppm
+D2_FISHPOND_MULTICLASS,main,turbidity_NTU,turbidity,NTU,1.02,598.68,PLAUSIBLE,100% nilai dalam rentang fisik 0.0-4000.0 NTU
+D2_FISHPOND_MULTICLASS,main,temp_C,temperature,deg C,15.0,37.99,PLAUSIBLE,100% nilai dalam rentang fisik 0.0-45.0 deg C
+D2_FISHPOND_MULTICLASS,main,pH,ph,unit pH,4.51,10.5,PLAUSIBLE,100% nilai dalam rentang fisik 0.0-14.0 unit pH
+D2_FISHPOND_MULTICLASS,main,do_mgL,do,mg/L,0.52,15.98,PLAUSIBLE,100% nilai dalam rentang fisik 0.0-25.0 mg/L
+D3_IOTMLCQ_2024,Sheet1,Temperature (°C),temperature,deg C,26.5,28.35,PLAUSIBLE,100% nilai dalam rentang fisik 0.0-45.0 deg C
+D3_IOTMLCQ_2024,Sheet1,Dissolved Oxygen (mg/L),do,mg/L,6.34,7.89,PLAUSIBLE,100% nilai dalam rentang fisik 0.0-25.0 mg/L
+D3_IOTMLCQ_2024,Sheet1,pH,ph,unit pH,7.34,7.98,PLAUSIBLE,100% nilai dalam rentang fisik 0.0-14.0 unit pH
+D3_IOTMLCQ_2024,Sheet1,Turbidity (NTU),turbidity,NTU,2.79,3.98,PLAUSIBLE,100% nilai dalam rentang fisik 0.0-4000.0 NTU
+D3_IOTMLCQ_2024,Sheet1,Oxygenation Interventions,do,mg/L,0.0,1.0,PLAUSIBLE,100% nilai dalam rentang fisik 0.0-25.0 mg/L
+D3_IOTMLCQ_2024,Sheet1,Corrective Interventions,ec,uS/cm,0.0,6.0,PLAUSIBLE,100% nilai dalam rentang fisik 0.0-100000.0 uS/cm
+D3_IOTMLCQ_2024,Sheet1,Average Temperature (°C),temperature,deg C,29.1,29.1,PLAUSIBLE,100% nilai dalam rentang fisik 0.0-45.0 deg C
+D3_IOTMLCQ_2024,Sheet1,High Temperature (°C),temperature,deg C,33.9,33.9,PLAUSIBLE,100% nilai dalam rentang fisik 0.0-45.0 deg C
+D3_IOTMLCQ_2024,Sheet1,Low Temperature (°C),temperature,deg C,24.1,24.1,PLAUSIBLE,100% nilai dalam rentang fisik 0.0-45.0 deg C
+D3_IOTMLCQ_2024,Sheet1,Precipitation (inches),ec,uS/cm,0.2,5.96,PLAUSIBLE,100% nilai dalam rentang fisik 0.0-100000.0 uS/cm
+D3_IOTMLCQ_2024,Sheet1,oxigeno_scaled,do,mg/L,7.351138957651082,8.900171159113427,PLAUSIBLE,100% nilai dalam rentang fisik 0.0-25.0 mg/L
+D3_IOTMLCQ_2024,Sheet1,ph,ph,unit pH,0.1524597097016438,1.029118413679345,PLAUSIBLE,100% nilai dalam rentang fisik 0.0-14.0 unit pH
+D3_IOTMLCQ_2024,Sheet1,turbidez,turbidity,NTU,-0.0610956003979587,1.016684378750718,UNVERIFIED,22.5% nilai di luar rentang fisik 0.0-4000.0 NTU; identitas kolom tidak terkonfirmasi
+D4_AQUAPONIC_IOT,filtered,water_pH,ph,unit pH,6.5,8.5,PLAUSIBLE,100% nilai dalam rentang fisik 0.0-14.0 unit pH
+D4_AQUAPONIC_IOT,filtered,TDS,tds,mg/L atau ppm,241.0,498.0,PLAUSIBLE,100% nilai dalam rentang fisik 0.0-50000.0 mg/L atau ppm
+D4_AQUAPONIC_IOT,filtered,water_temp,temperature,deg C,24.0,26.19,PLAUSIBLE,100% nilai dalam rentang fisik 0.0-45.0 deg C
+D4_AQUAPONIC_IOT,raw,water_pH,ph,unit pH,5.51,15.78,PLAUSIBLE_WITH_OUTLIERS,219 nilai (0.043%) di luar rentang fisik -> indikasi sensor fault
+D4_AQUAPONIC_IOT,raw,TDS,tds,mg/L atau ppm,200.0,1813.0,PLAUSIBLE,100% nilai dalam rentang fisik 0.0-50000.0 mg/L atau ppm
+D4_AQUAPONIC_IOT,raw,water_temp,temperature,deg C,21.63,27.19,PLAUSIBLE,100% nilai dalam rentang fisik 0.0-45.0 deg C
