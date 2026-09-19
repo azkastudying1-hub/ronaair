@@ -1,0 +1,20 @@
+{
+  "rgb_features": {
+    "status": "OK",
+    "silhouette_score": -0.338081450306409,
+    "n_samples": 4000,
+    "n_groups": 18
+  },
+  "embedding": {
+    "status": "OK",
+    "silhouette_score": -0.08692422697088932,
+    "n_samples": 4000,
+    "n_groups": 17
+  },
+  "kmeans_rgb": {
+    "status": "OK",
+    "k": 4,
+    "silhouette_score": 0.2162586291827155,
+    "n_samples": 4000
+  }
+}

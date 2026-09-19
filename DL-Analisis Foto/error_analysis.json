@@ -1,0 +1,10 @@
+{
+  "status": "OK",
+  "n_correct": 2631,
+  "n_wrong": 636,
+  "error_rate": 0.19467401285583102,
+  "mean_confidence_correct": 0.7085498510143097,
+  "mean_confidence_wrong": 0.43778507828525026,
+  "gradcam_off_roi_samples": 6,
+  "low_quality_in_test": 1301
+}

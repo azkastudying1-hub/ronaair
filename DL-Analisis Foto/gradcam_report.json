@@ -1,0 +1,15 @@
+{
+  "status": "OK",
+  "n_samples": 8,
+  "mean_roi_focus": 0.34019632637500763,
+  "threshold": 0.6,
+  "n_below_threshold": 6,
+  "images_below_threshold": [
+    "/content/RonaAir_CV/01_data/extracted/dataset_1/EOW_Datasets/augmented/data_256_3000/water_good/augmented_image_1001.png",
+    "/content/RonaAir_CV/01_data/extracted/dataset_1/EOW_Datasets/augmented/data_256_3000/water_good/augmented_image_3170.png",
+    "/content/RonaAir_CV/01_data/extracted/dataset_1/EOW_Datasets/augmented/data_256_3000/water_good/augmented_image_1185.png",
+    "/content/RonaAir_CV/01_data/extracted/dataset_1/EOW_Datasets/plain/data/water_bad/7550.png",
+    "/content/RonaAir_CV/01_data/extracted/dataset_1/EOW_Datasets/plain/data/water_good/11611.png",
+    "/content/RonaAir_CV/01_data/extracted/dataset_1/EOW_Datasets/plain/data/water_good/17277.png"
+  ]
+}

@@ -1,0 +1,6 @@
+{
+  "memmap": "/content/RonaAir_CV/05_outputs/mobilenet_embeddings/embeddings.float32.memmap",
+  "metadata_csv": "/content/RonaAir_CV/05_outputs/mobilenet_embeddings/embedding_metadata.csv",
+  "n": 22379,
+  "dim": 576
+}

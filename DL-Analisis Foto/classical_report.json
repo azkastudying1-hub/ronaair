@@ -1,0 +1,19 @@
+{
+  "status": "OK",
+  "results": [
+    {
+      "model": "logistic",
+      "accuracy": 0.7609427609427609,
+      "macro_precision": 0.16529947070949266,
+      "macro_recall": 0.13668690073970904,
+      "macro_f1": 0.14492806744619374
+    },
+    {
+      "model": "random_forest",
+      "accuracy": 0.7346189164370982,
+      "macro_precision": 0.20546878004782895,
+      "macro_recall": 0.2412694661296989,
+      "macro_f1": 0.18246323589537802
+    }
+  ]
+}
