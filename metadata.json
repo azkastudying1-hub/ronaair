@@ -1,6 +1,0 @@
-{
-  "name": "RonaAir",
-  "description": "Early risk screening and water quality monitoring for freshwater ponds.",
-  "requestFramePermissions": [],
-  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
-}
